@@ -141,19 +141,22 @@ picture {
   font-weight: bold;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  align-items: center;
   justify-content: center;
-  grid-gap: 1rem !important;
+  grid-gap: 1rem;
 }
+
 .shipping .ship {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
-  max-width: 200px;
   padding: 2rem 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+.ship .ship-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 750px) {
   #deal-boxes {
     grid-template-columns: 1fr 1fr;

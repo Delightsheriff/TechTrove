@@ -82,7 +82,7 @@ picture {
   cursor: pointer;
 }
 #deal-boxes {
-  margin-top: 2rem !important;
+  margin: 2rem 0 !important;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem !important;
@@ -101,7 +101,7 @@ picture {
 }
 .box1,
 .box2 {
-  padding: 4rem !important;
+  padding: 4rem 2rem !important;
   color: white;
   font-size: 20px;
 }
@@ -132,6 +132,26 @@ picture {
   color: white !important;
   background: transparent;
   border: 1px solid white;
+}
+.shipping {
+  margin: 2em 0 !important;
+  padding: 1.5rem !important;
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  justify-content: center;
+  grid-gap: 0.5rem !important;
+}
+.shipping .ship {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
 }
 @media only screen and (min-width: 750px) {
   #deal-boxes {

@@ -11,6 +11,7 @@ body {
   font-family: monospace !important;
   font-size: 1.125rem;
   line-height: 1.6;
+  background: #edecec;
 }
 
 ul {
@@ -65,8 +66,9 @@ picture {
 #landing_text p:nth-child(3) {
   font-size: 20px;
   color: black;
+  margin-bottom: 1rem !important;
 }
-#landing_text button {
+#landing_text a {
   background-color: #751fff;
   color: white !important;
   font-size: 17px;
@@ -75,12 +77,65 @@ picture {
   padding: 0.7rem 1.7rem !important;
   margin: 1.7rem 0 !important;
 }
-#landing_text button:hover {
+#landing_text a:hover {
   background-color: black;
   cursor: pointer;
 }
+#deal-boxes {
+  margin-top: 2rem !important;
+}
+.box1 {
+  background-image: url(../images/rediphone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box2 {
+  background-image: url(../images/take-sounds\ headphone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box1,
+.box2 {
+  padding: 4rem !important;
+  color: white;
+  font-size: 20px;
+}
 
+.box1 > p:nth-child(2),
+.box2 > p:nth-child(2) {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0 !important;
+}
+.box1 > p:nth-child(3),
+.box2 > p:nth-child(3) {
+  margin-bottom: 1.5rem !important;
+}
+.box1 a,
+.box2 a {
+  background: white;
+  color: black;
+  font-size: 17px;
+  border-radius: 1em;
+  border-style: none;
+  padding: 0.7rem 1.7rem !important;
+  margin: 1rem 0 !important;
+  border: 1px solid transparent;
+}
+.box1 a:hover,
+.box2 a:hover {
+  color: white !important;
+  background: transparent;
+  border: 1px solid white;
+}
 @media only screen and (min-width: 750px) {
+  #deal-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem !important;
+  }
 }
 @media only screen and (min-width: 800px) {
   #landing_text {

@@ -1,1 +1,42 @@
+.boxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+.box1 {
+  background-image: url(images/rediphone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+.box2 {
+  background-image: url(images/take-sounds\ headphone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
 
+.box1,
+.box2 {
+  padding: 4em;
+  color: white;
+  font-size: 20px;
+}
+
+.box1 > p:nth-child(2),
+.box2 > p:nth-child(2) {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.box1 button,
+.box2 button {
+  background: white;
+  color: black;
+  font-size: 17px;
+  border-radius: 1em;
+  border-style: none;
+  padding: 0.9em 3.5em;
+  margin: 2em 0;
+}

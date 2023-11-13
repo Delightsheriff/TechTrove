@@ -8,8 +8,7 @@
   scroll-behavior: smooth !important;
 }
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: monospace !important;
   font-size: 1.125rem;
   line-height: 1.6;
 }
@@ -31,13 +30,21 @@ picture {
 }
 
 .container {
-  padding: 0.5rem !important;
-  margin: 0 auto !important;
   max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 header {
-  border: 1px solid #000;
+  background: white;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0;
+  width: 100% !important;
+  margin: 0 auto !important;
+  z-index: 10000000000;
+  padding: 0 !important;
 }
+
 header .top {
   background: #000;
   padding: 0.2rem !important;
@@ -87,16 +94,21 @@ form .input-group input:focus {
   color: #751fff;
   padding: 0.5em !important;
 }
-.main-navbar {
-  padding: 0 0.5em !important;
+.main-navbar .top-navbar {
+  padding: 10px !important;
+}
+.main-navbar .navbar {
+  padding: 10px !important;
+  background-color: #ddd;
 }
 .main-navbar .navbar .nav-item .nav-link {
   color: #000;
 }
-@media only screen and (min-width: 770px) {
+
+@media only screen and (min-width: 750px) {
   form {
     padding: 0 !important;
-    margin-left: 1em !important;
+    margin-left: 3rem !important;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -114,7 +126,7 @@ form .input-group input:focus {
   }
   form {
     padding: 0 !important;
-    margin-left: 1em !important;
+    margin-left: 2rem !important;
   }
   form input {
     width: 30% !important;
@@ -130,7 +142,7 @@ form .input-group input:focus {
     width: 20% !important;
   }
   .top-navbar {
-    padding: 0;
+    padding: 0.5rem 0 !important;
   }
   .main-navbar {
     padding: 0 !important;

@@ -83,6 +83,9 @@ picture {
 }
 #deal-boxes {
   margin-top: 2rem !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem !important;
 }
 .box1 {
   background-image: url(../images/rediphone.jpg);
@@ -132,7 +135,6 @@ picture {
 }
 @media only screen and (min-width: 750px) {
   #deal-boxes {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem !important;
   }

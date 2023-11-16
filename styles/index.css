@@ -256,6 +256,62 @@ picture {
   color: black;
   border: 1px solid #000;
 }
+/* TODAYS SPECIAL */
+.today_special {
+  background: white;
+  width: 100%;
+  margin: 2em 0 !important;
+}
+.pic {
+  background: url(../images/todays-special.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: right;
+}
+.spec-white {
+  padding: 2rem !important ;
+  height: 400px;
+}
+.spec-white button {
+  background: #751fff;
+  color: white;
+  font-size: 17px;
+  border-radius: 1em;
+  border: transparent;
+  padding: 0.9em 3.5em !important;
+  margin: 2em 0;
+}
+.spec-white button:hover {
+  background: black;
+  color: white;
+}
+
+.spec-white p:first-child {
+  border: 1px solid red;
+  display: inline-block;
+  color: white;
+  background-color: #d72d2d;
+  padding: 0 0.7em;
+  margin: 1em 0;
+  font-size: 20px;
+}
+.spec-white p:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+.spec-white span {
+  font-size: 70px;
+  font-weight: bolder;
+}
+.spec-white p:nth-child(3) {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 1em;
+}
+#tic {
+  color: #751fff;
+}
 
 @media only screen and (min-width: 750px) {
   #deal-boxes {
@@ -273,5 +329,13 @@ picture {
   .bs {
     top: 0.5rem !important;
     right: -2rem !important;
+  }
+  .today_special {
+    display: flex;
+    justify-content: space-between;
+  }
+  .spec-white,
+  .pic {
+    flex: 1;
   }
 }

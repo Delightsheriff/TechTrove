@@ -42,7 +42,7 @@ picture {
 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: fit-content;
 }
 #landing_text {
   margin-top: 3rem !important;

@@ -313,7 +313,72 @@ picture {
 #tic {
   color: #751fff;
 }
+/* BRANDS */
+.brand_title {
+  text-align: center;
+  background: white;
+  padding: 2rem 0 !important;
+}
+.brand_title > p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.brands {
+  padding: 0.5rem 2rem !important;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.brand_img {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1rem 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* NEWSLETTER */
+.news {
+  margin: 2rem 0 !important;
+  background: #751fff;
+  color: white;
+  text-align: center;
+  padding: 2rem !important;
+}
+.news p:first-child {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 1em !important;
+}
+.news p:nth-child(2) {
+  font-size: 17px;
+  padding-bottom: 1em !important;
+}
+.eml input,
+.eml button {
+  display: block;
+  width: 100% !important;
+  height: 40px;
+  padding: 8px !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 0.5rem !important; /* Add spacing between input and button */
+}
+.eml button {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  border-radius: 1rem;
+  border-style: none;
+  text-align: center;
+}
+.eml button:hover {
+  background: gray;
+  color: black;
+}
 @media only screen and (min-width: 750px) {
   #deal-boxes {
     grid-template-columns: 1fr 1fr;
@@ -338,5 +403,18 @@ picture {
   .spec-white,
   .pic {
     flex: 1;
+  }
+  .eml {
+    display: flex;
+  }
+  .eml input {
+    flex: 2;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .eml button {
+    flex: 1;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 }

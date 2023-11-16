@@ -1,0 +1,124 @@
+.need-help {
+  /* border: 1px solid #000; */
+}
+.help-text {
+  padding: 2rem !important;
+  color: white;
+  background: black;
+}
+.help-text button {
+  background: #751fff;
+  color: white;
+  font-size: 17px;
+  border-radius: 1em;
+  border-style: none;
+  padding: 1rem 1.5rem !important;
+  margin: 1rem 0 !important;
+}
+
+.help-text div p:first-child {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+
+.help-text div p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 2em;
+}
+footer .top {
+  margin: 2rem 0 !important;
+  background-color: white;
+  padding: 2rem !important;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+footer .tit-img {
+  display: flex;
+  gap: 0.5rem !important;
+}
+footer .tit {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+footer .location p:nth-child(2) {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+footer .location p:nth-child(3) {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2;
+  padding-bottom: 2em;
+}
+
+footer .shop ul li {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2;
+  color: black;
+}
+.shop ul li a:hover {
+  color: #751fff;
+}
+
+.customer-support {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2;
+  color: black;
+}
+
+.policy {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgb(186, 190, 194);
+  margin: 0 6em;
+  padding-bottom: 3em;
+  background: white;
+}
+.bmt-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem !important;
+  align-items: center;
+}
+.bottom p {
+  font-size: 14px;
+  text-align: center;
+  padding: 1.5rem 0 !important;
+}
+
+.third {
+  margin-top: 1rem !important;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  background: #ddd;
+  /* padding: 0.5rem 0 !important; */
+}
+
+@media only screen and (min-width: 800px) {
+  .need-help {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tic,
+  .help-text {
+    flex: 1;
+  }
+}

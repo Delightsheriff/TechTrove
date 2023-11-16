@@ -79,15 +79,34 @@ form {
 form input {
   width: 70% !important;
   background-color: #edecec !important;
+  outline: none !important ;
+  border: none !important;
 }
-form .input-group input:focus {
+form .input-group {
+  border: none;
+}
+form input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+form .input-group:focus {
   outline: none !important;
   border: none;
+}
+.form-control {
+  height: 40px;
+  padding: 20px !important;
 }
 .ser-btn {
   background-color: #751fff;
   color: white;
-  width: 20% !important;
+  width: 15% !important;
+  border: none;
+  /* padding: 0.2rem 0; */
+}
+.ser-btn:hover {
+  background-color: #000;
+  color: white;
 }
 
 .main-navbar .top-navbar .dropdown-menu .dropdown-item i {

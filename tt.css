@@ -1,21 +1,18 @@
-.shipping {
-  /* border: 2px solid blue; */
-  margin: 2em 0;
-  background: white;
-  font-size: 20px;
-  font-weight: bold;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 1em 2em;
+.category_items {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3em;
 }
 
-.shipping > div {
-  /* border: 1px solid black; */
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2em 0;
+.cat_item > p {
+  padding: 10px 0;
 }
-.shipping > div > p {
-  padding: 0 1em;
+
+.circle img {
+  width: 168px;
+  height: 168px;
+  border-radius: 100%;
 }
+/* .circle img:hover{
+  transform: scale(1.2);
+} */

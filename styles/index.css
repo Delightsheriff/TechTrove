@@ -157,6 +157,45 @@ picture {
   justify-content: center;
 }
 
+.category {
+  margin: 2em 0 !important;
+  padding: 1.5rem !important;
+  background-color: white;
+}
+.category > p {
+  padding: 2rem 0 !important;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.category_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  grid-gap: 1rem !important;
+  text-align: center;
+}
+.cat_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.cat_item > p {
+  padding: 10px 0 !important;
+}
+.cat_item .circle img {
+  padding: 10px 0 !important;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.cat_item:hover .circle img {
+  transform: scale(1.02);
+}
 @media only screen and (min-width: 750px) {
   #deal-boxes {
     grid-template-columns: 1fr 1fr;

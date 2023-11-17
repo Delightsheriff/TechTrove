@@ -94,8 +94,8 @@ footer .shop ul li {
 .bmt-img {
   display: flex;
   justify-content: space-between;
-  gap: 0.2rem !important;
-  align-items: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
 }
 .bottom p {
   font-size: 14px;
@@ -117,8 +117,9 @@ footer .shop ul li {
     display: flex;
     justify-content: space-between;
   }
-  .tic,
+  .pic,
   .help-text {
     flex: 1;
+    border: 1px solid #000;
   }
 }

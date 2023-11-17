@@ -36,14 +36,14 @@ picture {
   max-width: 1200px !important;
 }
 #landing-page {
-  margin-top: 8rem !important;
-  padding: 1rem 0 !important ;
-  transition: background-image 1s ease-in-out;
+  margin-top: 10rem !important;
+  padding: 3rem 0 !important ;
+  transition: background-image 1.5s ease-in-out;
   background-position: center;
-
   background-repeat: no-repeat;
   background-size: cover;
-  height: fit-content;
+  height: max-content;
+  /* 100% !important */
 }
 #landing_text {
   margin-top: 3rem !important;
@@ -263,16 +263,11 @@ picture {
   width: 100%;
   margin: 2em 0 !important;
 }
-.pic {
-  background: url(../images/todays-special.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
-  background-position: right;
+.pic img {
+  height: 100%;
 }
 .spec-white {
   padding: 2rem !important ;
-  height: 450px;
 }
 .spec-white button {
   background: #751fff;
@@ -402,7 +397,8 @@ picture {
     justify-content: space-between;
   }
   .spec-white,
-  .pic {
+  .pic,
+  .tic {
     flex: 1;
   }
   .eml {

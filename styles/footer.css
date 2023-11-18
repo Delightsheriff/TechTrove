@@ -6,14 +6,14 @@
   color: white;
   background: black;
 }
-.help-text button {
+.help-text a {
   background: #751fff;
   color: white;
   font-size: 17px;
   border-radius: 1em;
   border-style: none;
   padding: 1rem 1.5rem !important;
-  margin: 1rem 0 !important;
+  /* margin: 12rem 0 !important; */
 }
 
 .help-text div p:first-child {
@@ -23,11 +23,12 @@
   padding-bottom: 1em;
 }
 
-.help-text div p {
+.help-text #para {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.5;
   padding-bottom: 2em;
+  margin-bottom: 3rem !important;
 }
 footer .top {
   margin: 2rem 0 !important;

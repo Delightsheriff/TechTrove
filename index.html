@@ -10,21 +10,16 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
+
+    <script src="./scripts/main.js" defer></script>
     <script src="./scripts/index.js" defer></script>
   </head>
   <body>
-    <header class="container">
+    <header id="container">
       <div class="top">
         <p>Free Shipping for orders over 50$</p>
         <ul>
@@ -62,16 +57,16 @@
                   </div>
                 </form>
               </div>
-              <div class="col-md-5 my-auto">
+              <div class="col-md-5 my-auto" id="login">
                 <ul class="nav justify-content-end">
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fa fa-shopping-cart"></i> Cart (0)
+                      <i class="fa fa-shopping-cart"></i> Cart (<span>0</span>)
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fa fa-heart"></i> Wishlist (0)
+                      <i class="fa fa-heart"></i> Wishlist (<span>0</span>)
                     </a>
                   </li>
                   <li class="nav-item dropdown">
@@ -182,7 +177,7 @@
         </nav>
       </div>
     </header>
-    <main class="container" id="landing-page">
+    <main id="container" id="landing-page">
       <div id="landing_text">
         <p>Best Prices</p>
         <p>Incredible Prices on All Your Favorite Items</p>
@@ -190,7 +185,7 @@
         <a href="./pages/shop_all.html">Shop Now</a>
       </div>
     </main>
-    <section class="container">
+    <section id="container">
       <section id="deal-boxes">
         <div class="box1">
           <p>Holiday Deals</p>
@@ -313,14 +308,14 @@
         </div>
       </section>
       <section class="best_price">
-        <div class="temp">
+        <div class="best-temp">
           <img src="images/bestprice.png" alt="" />
-          <div class="bs">
+          <div class="bs_price">
             <p>Best <br />Price</p>
           </div>
         </div>
 
-        <div class="plain-white">
+        <div class="best-plain-white">
           <p>
             Save up to <br />
             <span>$150</span> <br />
@@ -336,7 +331,7 @@
           <p>
             Best Arial View in Town <br />
 
-            <span> <span id="tic">30%</span> OFF</span> <br />
+            <span> <span id="spec-white-tic">30%</span> OFF</span> <br />
 
             on professional camera drones
           </p>
@@ -348,7 +343,7 @@
           <a href="./pages/drones.html">Shop</a>
         </div>
 
-        <div class="pic">
+        <div class="spec-white-pic">
           <img src="../images/todays-special.png" alt="todays-special" />
         </div>
       </section>
@@ -375,7 +370,7 @@
       <section class="news">
         <p>Newsletter</p>
         <p>Sign up to receive updates on new arrivals and special offers</p>
-        <form class="eml">
+        <form class="news-eml">
           <input
             type="email"
             placeholder="Your Email Here"
@@ -386,7 +381,7 @@
         </form>
       </section>
     </section>
-    <footer class="container">
+    <footer>
       <section class="need-help">
         <div class="help-text">
           <div>
@@ -402,13 +397,13 @@
           </div>
         </div>
 
-        <div class="tic">
+        <div class="ticks">
           <img src="../images/needhelp.jpg" alt="help" />
         </div>
       </section>
-      <div class="top">
+      <div class="foot-top">
         <div class="location">
-          <div class="tit">Store Location</div>
+          <div class="foot-tit">Store Location</div>
           <p>
             500 Terry Francois Street <br />
             San Francisco, CA 94158 <br />
@@ -431,7 +426,7 @@
           </div>
         </div>
         <div class="shop">
-          <div class="tit">Shop</div>
+          <div class="foot-tit">Shop</div>
           <ul>
             <li><a href="./pages/shop_all.html">Shop All</a></li>
             <li><a href="./pages/computers.html">Computers</a></li>
@@ -445,7 +440,7 @@
           </ul>
         </div>
         <div class="customer-support">
-          <div class="tit">Customer Support</div>
+          <div class="foot-tit">Customer Support</div>
           <ul>
             <li><a href="./pages/contact.html">Contact Us</a></li>
             <li><a href="./pages/help.html">Help Center</a></li>
@@ -454,7 +449,7 @@
           </ul>
         </div>
         <div class="policy">
-          <div class="tit">Policy</div>
+          <div class="foot-tit">Policy</div>
           <ul>
             <li><a href="./pages/shipping.html">Shipping & Returns </a></li>
             <li><a href="./pages/terms.html">Terms & Conditions</a></li>

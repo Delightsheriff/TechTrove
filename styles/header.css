@@ -1,173 +1,184 @@
 /* TYPOGRAPHY */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
 /* GLobal styling */
 *,
 ::after,
 ::before {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-  scroll-behavior: smooth !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
+  background: #ddd;
 }
-
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-  color: #000 !important;
-  cursor: pointer;
-}
-
+/* #container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 img,
 svg,
 picture {
   max-width: 100%;
   display: block;
 }
-
-.container {
-  max-width: 1200px !important;
-  margin: 0 auto !important;
+ul {
+  list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+/* HEADER STYLING */
 header {
   background: white;
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
+  position: sticky;
+  top: 0;
+  left: 0;
   right: 0;
-  width: 100% !important;
-  margin: 0 auto !important;
+  width: 100%;
+  margin: 0 auto;
   z-index: 10000000000;
-  padding: 0 !important;
+  transition: top 0.3s;
 }
 
 header .top {
   background: #000;
-  padding: 0.2rem !important;
-  margin: 0 !important;
-  margin-bottom: 0.3rem !important;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 header .top,
 header .top a {
-  color: white !important;
-
+  color: white;
   text-align: center;
   font-size: 12px;
 }
+header .top p {
+  padding: 0.2rem 0;
+  margin: 0;
+}
 header .top ul {
   display: none;
-  padding: 0 !important;
+  padding: 0.2rem 0;
+  margin: 0;
 }
 header .top ul a {
   text-decoration: underline;
 }
+
 .main-navbar .top-navbar .nav-link {
-  font-size: 12px;
-  padding-left: 0.5rem !important;
+  font-size: 0.9rem;
+  color: #000;
+  padding: 0.2rem 0;
+  padding-left: 0.5rem;
 }
 .main-navbar .navbar .nav-item .nav-link:hover {
-  color: #751fff !important;
-  background-color: whitesmoke !important;
+  color: #751fff;
+  background-color: whitesmoke;
 }
+.main-navbar .top-navbar .dropdown-menu .dropdown-item i {
+  color: #751fff;
+  padding: 0.5em;
+}
+.main-navbar .top-navbar {
+  padding: 0.1rem;
+}
+.main-navbar .navbar {
+  background-color: #ddd;
+  padding: 0;
+}
+.main-navbar .navbar .nav-item .nav-link {
+  color: #000;
+}
+
+/* search button */
 form {
-  padding: 0.5em 0 !important;
+  padding: 0.5em 0;
 }
 form input {
-  width: 70% !important;
-  background-color: #edecec !important;
-  outline: none !important ;
-  border: none !important;
+  width: 70%;
+  background-color: #edecec;
+  outline: none;
+  border: none;
 }
 form .input-group {
   border: none;
 }
 form input:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  outline: none;
+  box-shadow: none;
 }
+
 form .input-group:focus {
-  outline: none !important;
+  outline: none;
   border: none;
 }
 .form-control {
   height: 40px;
-  padding: 20px !important;
+  padding: 20px;
 }
 .ser-btn {
   background-color: #751fff;
   color: white;
-  width: 15% !important;
+  width: 15%;
   border: none;
-  /* padding: 0.2rem 0; */
 }
 .ser-btn:hover {
   background-color: #000;
   color: white;
 }
 
-.main-navbar .top-navbar .dropdown-menu .dropdown-item i {
-  color: #751fff;
-  padding: 0.5em !important;
-}
-.main-navbar .top-navbar {
-  padding: 10px !important;
-}
-.main-navbar .navbar {
-  padding: 10px !important;
-  background-color: #ddd;
-}
-.main-navbar .navbar .nav-item .nav-link {
-  color: #000;
-}
-
+/* RESPONSIVE LAYOUT */
 @media only screen and (min-width: 750px) {
   form {
-    padding: 0 !important;
-    margin-left: 3rem !important;
+    padding: 0;
+    margin-left: 3rem;
   }
 }
 @media only screen and (min-width: 800px) {
   header .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center !important;
-    margin: 0 !important;
+    flex-direction: row;
   }
+
   header .top ul {
     display: flex;
     justify-content: space-between;
-    align-items: center !important;
+    align-items: center;
     width: 40%;
   }
   form {
-    padding: 0 !important;
-    margin-left: 2rem !important;
+    padding: 0;
+    margin-left: 2rem;
   }
   form input {
-    width: 30% !important;
-    background-color: #edecec !important;
+    width: 30%;
+    background-color: #edecec;
   }
   form .input-group input:focus {
-    outline: none !important;
+    outline: none;
     border: none;
   }
   .ser-btn {
     background-color: #751fff;
     color: white;
-    width: 20% !important;
+    width: 20%;
   }
+
   .top-navbar {
-    padding: 0.5rem 0 !important;
+    padding: 0.5rem 0;
   }
   .main-navbar {
-    padding: 0 !important;
+    padding: 0;
   }
 
   .main-navbar .top-navbar .brand-name {
@@ -198,7 +209,7 @@ form .input-group:focus {
     background-color: #ddd;
   }
   .main-navbar .navbar .nav-item .nav-link {
-    padding: 0.5em !important;
+    padding: 0.5em;
     color: #000;
     font-size: 15px;
   }

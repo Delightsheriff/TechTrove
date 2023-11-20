@@ -84,6 +84,7 @@ footer .bottom {
 }
 footer .bmt-img {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   flex-wrap: wrap;
 }

@@ -1,5 +1,5 @@
 /* LANDING PAGE */
-#landing-page {
+.landing-page {
   padding: 3rem 0;
   width: 100%;
   transition: background-image 1.5s ease-in-out;

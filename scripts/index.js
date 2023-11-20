@@ -1,4 +1,4 @@
-const landing = document.querySelector("#landing-page");
+const landing = document.querySelector(".landing-page");
 const backgrounds = [
   "../images/landing/firstlanding.png",
   "../images/landing/secondlanding.webp",

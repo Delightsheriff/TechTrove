@@ -18,6 +18,8 @@ changeBackground();
 // Change background every 12 seconds
 setInterval(changeBackground, 12000);
 
+// HSHHSHGEYD NNDJSUSSNDJEJ
+
 const products = [
   {
     name: 'Pilates 14" Touch Screen Laptop 12GB Memory',
@@ -598,33 +600,33 @@ const products = [
 ];
 
 // POST Endpoint
-const endpoint = "https://techtrove-tsly.onrender.com/api/product";
+// const endpoint = "https://techtrove-backend.onrender.com/api/product";
 
-const postMultipleFiles = (url, ArrayOfObjects) => {
-  const endpoint = url;
+// const postMultipleFiles = (url, ArrayOfObjects) => {
+//   const endpoint = url;
 
-  // Use Promise.all to collect all fetch promises
-  Promise.all(
-    ArrayOfObjects.map((item) =>
-      fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Add any additional headers if needed
-        },
-        body: JSON.stringify(item),
-      })
-    )
-  )
-    .then((responses) =>
-      Promise.all(responses.map((response) => response.json()))
-    )
-    .then((data) => {
-      console.log("All data successfully sent to the server:", data);
-    })
-    .catch((error) => {
-      console.error("Error:", error.message);
-    });
-};
+//   // Use Promise.all to collect all fetch promises
+//   Promise.all(
+//     ArrayOfObjects.map((item) =>
+//       fetch(endpoint, {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           // Add any additional headers if needed
+//         },
+//         body: JSON.stringify(item),
+//       })
+//     )
+//   )
+//     .then((responses) =>
+//       Promise.all(responses.map((response) => response.json()))
+//     )
+//     .then((data) => {
+//       console.log("All data successfully sent to the server:", data);
+//     })
+//     .catch((error) => {
+//       console.error("Error:", error.message);
+//     });
+// };
 
-// postMultipleFiles(endpoint, products);
+// postMultipleFiles("https://techtrove-tsly.onrender.com/api/product", products);

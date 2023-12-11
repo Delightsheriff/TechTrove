@@ -1,4 +1,3 @@
-////////////\
 // Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", async function () {
   try {
@@ -12,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const saleItems = dataArray.filter(
       (item) => item.category === "speakers" || item.category === "headphones"
     );
-    console.log(saleItems);
+    // console.log(saleItems);
 
     // Create an empty string to store HTML content
     let htmlContent = "";
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       // Check if a sale price is present
       if (item.salePrice) {
         // Apply styles for the sale price (optional)
-        styles = "text-decoration: line-through; "; // Add any other styles
+        styles = "text-decoration: line-through !important; "; // Add any other styles
       }
 
       // Append the generated HTML to htmlContent, applying styles as needed

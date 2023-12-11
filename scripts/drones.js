@@ -1,4 +1,3 @@
-////////////\
 // Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", async function () {
   try {
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Filter items with .sale: true and category === "wearable"
     const saleItems = dataArray.filter((item) => item.category === "drones");
-    console.log(saleItems);
+    // console.log(saleItems);
 
     // Create an empty string to store HTML content
     let htmlContent = "";
